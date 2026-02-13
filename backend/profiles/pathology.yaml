@@ -1,0 +1,14 @@
+name: pathology
+language: tr
+answer_style: evidence_first
+topk: 8
+min_score: 0.0
+prompt_rules:
+  - "Patoloji raporunda TANI/ICD-O satirlarini aynen cikar."
+  - "Bulamazsan: 'Belgede açık ifade yok.' + neden"
+diagnosis_keywords:
+  - "TANI"
+  - "ICD-O"
+  - "ICD"
+  - "PATOLOJI RAPORU"
+  - "PATOLOJIK TANI"

@@ -1,0 +1,17 @@
+name: surgery
+language: tr
+topk: 8
+min_score: 0.0
+prompt_rules:
+  - "Yalnizca CONTEXT bilgisini kullan; ek bilgi uydurma."
+  - "Ameliyat/operasyon raporunda on tani, son tani ve yapilan islem satirlarini aynen cikar."
+  - "Bulunamazsa: 'Belgede açık ifade yok.' de ve nedenini kisaca yaz."
+  - "Tanı koyma veya tedavi onerisi verme."
+  - "Kaynaklar bolumunde doc/page/chunk_id ver."
+diagnosis_keywords:
+  - "AMELIYAT"
+  - "OPERASYON"
+  - "ANESTEZI"
+  - "CERRAHI"
+  - "ON TANI"
+  - "SON TANI"

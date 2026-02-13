@@ -1,0 +1,6 @@
+name: gastro
+inherits: pathology
+topk: 10
+prompt_rules:
+  - "Gastroenteroloji için önce TANI satırını aynen ver."
+  - "Makroskopi/klinik bilgi varsa kısa özetle ama yorum yapma."

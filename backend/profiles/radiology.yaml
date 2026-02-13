@@ -1,0 +1,18 @@
+name: radiology
+language: tr
+topk: 8
+min_score: 0.0
+prompt_rules:
+  - "Sadece CONTEXT'e dayan; harici bilgi kullanma."
+  - "Radyoloji raporunda bulgu/sonuc satirlarini aynen cikar."
+  - "CONTEXT'te acik ifade yoksa: 'Belgede açık ifade yok.' de."
+  - "Tanı koyma, tedavi onerme, klinik karar verme."
+  - "Cevap sonunda kaynaklari doc/page/chunk_id ile yaz."
+diagnosis_keywords:
+  - "RADYOLOJI"
+  - "MR"
+  - "BT"
+  - "TOMOGRAFI"
+  - "ULTRASON"
+  - "BULGU"
+  - "SONUC"

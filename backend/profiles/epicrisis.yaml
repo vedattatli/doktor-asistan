@@ -1,0 +1,17 @@
+name: epicrisis
+language: tr
+topk: 8
+min_score: 0.0
+prompt_rules:
+  - "Sadece CONTEXT'e dayan; halusinasyon yapma."
+  - "Epikrizde yatis nedeni, surec ve taburcu ozeti satirlarini oncelikle cikar."
+  - "Bilgi yoksa: 'Belgede açık ifade yok.' de ve eksik alanlari belirt."
+  - "Tanı/tedavi onerisi veya yeni yorum ekleme."
+  - "Kaynaklari doc/page/chunk_id formatinda ver."
+diagnosis_keywords:
+  - "EPIKRIZ"
+  - "TABURCU"
+  - "YATIS"
+  - "OZETI"
+  - "TANI"
+  - "PLAN"

@@ -1,0 +1,16 @@
+name: general
+language: tr
+answer_style: bullets
+topk: 5
+min_score: 0.0
+prompt_rules:
+  - "Sadece CONTEXT'e dayan."
+  - "CONTEXT'te yoksa: 'Belgede açık ifade yok.'"
+  - "Tani/tedavi onerme."
+diagnosis_keywords:
+  - "TANI"
+  - "SONUÇ"
+  - "DIAGNOSIS"
+  - "PATOLOJIK TANI"
+  - "ICD"
+  - "ICD-O"

@@ -1,0 +1,17 @@
+name: endoscopy
+language: tr
+topk: 8
+min_score: 0.0
+prompt_rules:
+  - "Yanit sadece verilen CONTEXT'ten uretilmeli."
+  - "Endoskopi bulgularini (ozofagus, mide, duodenum vb.) metinde gectigi sekliyle ver."
+  - "CONTEXT'te acik ifade yoksa: 'Belgede açık ifade yok.' de."
+  - "Tanı koyma, tedavi onerme, karar verme."
+  - "Cevap sonunda kaynaklari doc/page/chunk_id olarak listele."
+diagnosis_keywords:
+  - "ENDOSKOPI"
+  - "GASTROSKOPI"
+  - "KOLONOSKOPI"
+  - "BULGU"
+  - "TANI"
+  - "RAPOR"
